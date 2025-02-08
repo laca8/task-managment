@@ -44,7 +44,7 @@ export default function KanbanBoard() {
         {
             id: "2",
             title: "Doing",
-            color: "blue-500",
+            color: "#6CB4EE",
             tasks: [],
         },
         {
@@ -123,8 +123,8 @@ export default function KanbanBoard() {
                         <div key={column.id} className="flex w-80 flex-col rounded-lg bg-gray-50  max-md:w-full ">
                             <div className="mb-4 flex items-center justify-between">
 
-                                <div className={`flex items-center space-x-2 bg-white p-4 w-full border-t-4 border-${column.color} shadow-md`}>
-                                    <div className={`h-2 w-2 rounded-full bg-${column.color}`} />
+                                <div className={`flex items-center space-x-2 bg-white p-4 w-full border-t-4 border-[${column.color}] shadow-md`}>
+                                    <div className={`h-2 w-2 rounded-full bg-[${column.color}]`} />
                                     <h2 className={`font-medium `}>{column.title}</h2>
                                 </div>
                             </div>
