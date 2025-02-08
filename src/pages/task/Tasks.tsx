@@ -123,8 +123,8 @@ export default function KanbanBoard() {
                         <div key={column.id} className="flex w-80 flex-col rounded-lg bg-gray-50  max-md:w-full ">
                             <div className="mb-4 flex items-center justify-between">
 
-                                <div className={`flex items-center space-x-2 bg-white p-4 w-full border-t-4 border-[${column.color}] shadow-md`}>
-                                    <div className={`h-2 w-2 rounded-full ${column.title == 'Doing' ? 'bg-bllue-500' : column.title == 'Doing' ? 'bg-green-500'   : column.title == 'On hold' ? 'bg-pink-500'  : column.title == 'Backlog' ? 'bg-purple-500' : 'bg-green-500' }`} />
+                                <div className={`flex items-center space-x-2 bg-white p-4 w-full border-t-4 ${column.title == 'Doing' ? 'border-bllue-500' : column.title == 'Done' ? 'border-green-500'   : column.title == 'On hold' ? 'border-pink-500'  : column.title == 'Backlog' ? 'border-purple-500' : 'border-orange-500' } shadow-md`}>
+                                    <div className={`h-2 w-2 rounded-full ${column.title == 'Doing' ? 'bg-bllue-500' : column.title == 'Done' ? 'bg-green-500'   : column.title == 'On hold' ? 'bg-pink-500'  : column.title == 'Backlog' ? 'bg-purple-500' : 'bg-orange-500' }`} />
                                     <h2 className={`font-medium `}>{column.title}</h2>
                                 </div>
                             </div>
